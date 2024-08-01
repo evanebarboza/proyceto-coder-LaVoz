@@ -1,0 +1,182 @@
+/* Media Queries */
+@media (max-width: 1070px) {
+    .ultimas-noticias {
+        text-align: center;
+        padding: $padding;
+    }
+
+    .ultimas-noticias-tarjeta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: $padding;
+    }
+
+    .ultimas-noticias-tarjeta div {
+        background: $text-color;
+        padding: $padding;
+        border-radius: 8px;
+        box-shadow: $box-shadow;
+        flex: 1 1 calc(33.333% - 40px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ultimas-noticias-tarjeta img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+
+    .ultimas-noticias-tarjeta h3 {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    .ultimas-noticias-tarjeta a.boton {
+        padding: 10px 20px;
+        border: none;
+        background-color: $primary-color;
+        color: $text-color;
+        cursor: pointer;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: #80dce5;
+            color: $primary-color;
+        }
+    }
+
+    .categorias-cu {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .categorias-carrousel img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 956px) {
+    .contacto-mapa-redes {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto-redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        width: 100%;
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+        }
+    }
+}
+
+@media (max-width: 833px) {
+    .guia-listado-comercio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: column;
+    }
+
+    .guia-tarjeta-comercio {
+        padding: $padding;
+        margin: $padding;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .noticias-grilla {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "noticia1 noticia2"
+            "noticia3 noticia4"
+            "noticia5 noticia6"
+            "noticia7 noticia8"
+            "noticia9 noticia9"
+            "noticia10 noticia11"
+            "noticia12 noticia13"
+            "noticia14 noticia15";
+    }
+
+    .contacto-mapa-redes {
+        display: flex;
+        justify-content: center;
+
+        iframe {
+            width: 300px;
+        }
+    }
+
+    .contacto-redes {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .noticias-grilla {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "noticia1"
+            "noticia2"
+            "noticia3"
+            "noticia4"
+            "noticia5"
+            "noticia6"
+            "noticia7"
+            "noticia8"
+            "noticia9"
+            "noticia10"
+            "noticia11"
+            "noticia12"
+            "noticia13"
+            "noticia14"
+            "noticia15";
+    }
+
+    .contacto-mapa-redes {
+        display: flex;
+        justify-content: center;
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    .contacto-redes {
+        font-size: 8px;
+    }
+
+    .guia-listado-comercio {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .guia-listado-comercio div {
+        width: 100%;
+    }
+}

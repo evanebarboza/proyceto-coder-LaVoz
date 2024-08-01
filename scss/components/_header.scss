@@ -1,0 +1,87 @@
+$primary-color: #1F6AA4;
+$hover-color: #65abec;
+$active-color: #35e0f4;
+$btn-hover-bg: #86caff;
+$text-color: #fff;
+
+header {
+    background-color: $primary-color;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+        width: 100%;
+    }
+
+    nav {
+        ul {
+            list-style: none;
+            text-align: center;
+
+            li {
+                display: inline-block;
+                margin: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $text-color;
+                    font-size: 20px;
+
+                    &:hover {
+                        color: $hover-color;
+                    }
+
+                    &:active {
+                        color: $active-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    background-color: $primary-color !important;
+    padding: 0% !important;
+    margin: 0%;
+}
+
+.nav-link {
+    color: $text-color !important;
+    background-color: $primary-color !important;
+}
+
+.btn {
+    border-color: $text-color !important;
+    color: $text-color !important;
+
+    &:hover {
+        background-color: $btn-hover-bg !important;
+    }
+}
+
+.bg-body-tertiary, .container-fluid {
+    background-color: $primary-color !important;
+}
+
+.button.navbar-toggler {
+    color: $text-color !important;
+}
+
+$primary-color: #1F6AA4;
+$text-color: white;
+$border-radius: 100px;
+$padding: 10px 50px;
+$margin: 10px;
+
+.boton {
+    background-color: $primary-color;
+    text-decoration: none;
+    color: $text-color;
+    border-radius: $border-radius;
+    padding: $padding;
+    margin: $margin;
+    display: inline-block;
+}
