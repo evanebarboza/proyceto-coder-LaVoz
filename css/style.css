@@ -694,19 +694,15 @@ footer {
 
     .contacto-mapa-redes {
         display: flex;
-        justify-content: center;
-    }
-
-    .contacto-mapa-redes iframe {
-        width: 300px;
-    }
-
-    .contacto-redes {
-        display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 10px;
         width: 100%;
+        margin: 10%;
+    }
+
+    .contacto-mapa-redes iframe {
+        width: 90%;
     }
 
     .contacto-redes p {
@@ -727,6 +723,34 @@ footer {
         justify-content: center;
         gap: 5px;
     }
+    .categorias-carrousel{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+    .noticias-grilla {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "noticia1" 
+            "noticia2"
+            "noticia3"
+            "noticia4"
+            "noticia5"
+            "noticia6"
+            "noticia7" 
+            "noticia8"
+            "noticia9" 
+            "noticia9"
+            "noticia10" 
+            "noticia11"
+            "noticia12"
+            "noticia13"
+            "noticia14"
+            "noticia15";
+    }
 }
 
 .contacto-form form {
@@ -737,31 +761,11 @@ footer {
 }
 
 @media (max-wigth: 573px) {
-    /*!----ver contacto, el mapa se corta-----*/
     .contacto-mapa-redes{
         display: flex;
         flex-direction: column;
         columns: 1;
         
-    }
-    .noticias-grilla {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "noticia1"
-            "noticia2"
-            "noticia3"
-            "noticia4"
-            "noticia5"
-            "noticia6"
-            "noticia7"
-            "noticia8"
-            "noticia9"
-            "noticia10"
-            "noticia11"
-            "noticia12"
-            "noticia13"
-            "noticia14"
-            "noticia15";
     }
 }
 
@@ -786,5 +790,9 @@ footer {
     .ultimas-noticias-tarjeta div {
         width: 100%;
         flex-wrap: wrap;
+    }
+    .ultimas-noticias div div img {
+        width: 200px;
+        height: 200px;
     }
 }
