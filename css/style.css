@@ -122,6 +122,29 @@ nav ul li a:active {
     display: inline-block;
 }
 
+.boton-hero{
+    background-color: #1F6AA4;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    padding: 10px 50px 10px 50px;
+    margin: 10px;
+    width:auto;
+}
+
+@keyframes botonAnimacion {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+}
+  
+  .boton-hero {
+    animation: botonAnimacion 0.5s ease-in-out infinite alternate;
+}
+
 /*?----INDEX----*/
 .hero h1 {
     font-weight: 900;
@@ -147,7 +170,6 @@ nav ul li a:active {
 
 .ultimas-noticias {
     padding: 20px;
-    background: rgb(224, 224, 223);
 }
 
 .ultimas-noticias h2 {
@@ -179,6 +201,13 @@ nav ul li a:active {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    transition: 1s;
+}
+.ultimas-noticias-tarjeta div:hover {
+    transform: scale(2);
+    box-shadow: 1px 10px 40px 5px rgba(0, 0, 0, 0.50);
+    -webkit-box-shadow: 1px 10px 40px 5px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 1px 10px 40px 5px rgba(0, 0, 0, 0.50);
 }
 
 .categorias-carrousel {
@@ -649,7 +678,7 @@ footer {
         flex-direction: column;
         align-items: center;
         font-size: 10px;
-        width: 100%;
+        width: 80%;
     }
 
     .contacto-redes p {
@@ -697,8 +726,6 @@ footer {
         flex-direction: column;
         align-items: center;
         font-size: 10px;
-        width: 100%;
-        margin: 10%;
     }
 
     .contacto-mapa-redes iframe {

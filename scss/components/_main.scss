@@ -4,7 +4,7 @@ $text-color: white;
 $padding: 20px;
 $border-radius: 20px;
 $background-light: aliceblue;
-$background-dark: rgb(224, 224, 223);
+$background-dark: rgb(156, 224, 245);
 $font-size-h1: 45px;
 $font-weight-bold: 900;
 $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -28,6 +28,16 @@ $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         font-stretch: expanded;
         padding: $padding;
     }
+}
+
+.boton-hero {
+    background-color: $primary-color;
+    text-decoration: none;
+    color: $text-color;
+    border-radius: $border-radius;
+    padding: $padding;
+    margin: $margin;
+    display: inline-block;
 }
 
 .ultimas-noticias {
@@ -61,7 +71,9 @@ $box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     }
 }
-
+.ultimas-noticias div{
+    @include rounded-box(#1F6AA4, aliceblue);
+}
 .ultimas-noticias-tarjeta {
     padding: $padding;
     display: flex;
